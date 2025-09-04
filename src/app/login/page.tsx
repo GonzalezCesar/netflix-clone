@@ -26,8 +26,8 @@ export default function Page() {
         />
       </header>
 
-      <main className="pt-10 px-4 flex justify-center">
-        <div className="bg-black/80 rounded-sm p-15 w-auto h-auto">
+      <main className="pt-1 px-4 flex justify-center">
+        <div className="bg-black/70 rounded-sm p-15 w-[30rem] h-auto">
           <h1 className="text-4xl text-white font-bold mt-1 mb-3">Iniciar sesión</h1>
           <form>
             <input type="text" placeholder='Email o número de celular'
