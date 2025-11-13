@@ -25,9 +25,8 @@ const Navbar = () => {
                 className="appearance-none bg-transparent rounded border border-gray-500 px-9 h-8 text-white cursor-pointer text-[1rem] font-semibold"
                 defaultValue="es"
               >
-                <option value="es">Español</option>
-                <option value="en">English</option>
-                <option value="fr">Français</option>
+                <option value="es" className="text-black">Español</option>
+                <option value="en" className="text-black">English</option>
               </select>
               <Languages className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white w-4 h-4 pointer-events-none" />
               <IoMdArrowDropdown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white w-4 h-4 pointer-events-none" />
