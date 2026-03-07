@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -17,17 +18,19 @@ export default function Page() {
       </div>
 
       <header className="w-full px-4 py-5 bg-transparent">
-        <Image
-          src="/images/Netflix_Logo_PMS.png"
-          alt="Netflix Logo"
-          width={188}
-          height={30}
-          className="ml-28 -mt-4 object-contain"
-        />
+        <Link href="/">
+          <Image
+            src="/images/Netflix_Logo_PMS.png"
+            alt="Netflix Logo"
+            width={188}
+            height={30}
+            className="ml-[10.6rem] -mt-4 object-contain"
+          />
+        </Link>
       </header>
 
-      <main className="pt-1 px-4 flex justify-center">
-        <div className="bg-black/70 rounded-sm p-15 w-[30rem] h-auto">
+      <main className="px-10 flex justify-center">
+        <div className="-mt-3 bg-black/70 rounded-[5px] p-14 w-[30rem] h-[43.5rem]">
           <h1 className="text-4xl text-white font-bold mt-1 mb-3">Iniciar sesión</h1>
           <form>
             <input type="text" placeholder='Email o número de celular'
@@ -46,7 +49,7 @@ export default function Page() {
             ¿Olvidaste la contraseña?
           </p>
           {/* <input type='checkbox' className='appearance-none h-6 w-6 bg-black border border-gray-500 rounded-xs cursor-pointer hover:border-white checked:bg-gray-500 focus:outline-none transition-colors duration-100'/> */}
-          <div className='flex justify-start'>
+          {/* <div className='flex justify-start'>
             <label className="relative inline-flex items-center cursor-pointer">
               <input
                 type="checkbox"
@@ -71,7 +74,7 @@ export default function Page() {
           <p className='mt-3 text-gray-500 text-lg leading-relaxed max-w-md break-words'>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</p>
           <p className='text-lg mt-3 mb-3 text-blue-500 underline'>
             Más info
-          </p>
+          </p> */}
         </div>
       </main>
     </div>
